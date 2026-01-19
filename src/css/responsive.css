@@ -1,0 +1,97 @@
+/* =========================
+   RESPONSIVE GENERAL
+========================= */
+
+/* Ajustes generales para tablet y móvil */
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .process-list li {
+    padding-left: 2rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .footer-links a {
+    margin-left: 0;
+  }
+}
+
+/* Móvil pequeño */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content .btn-primary {
+    padding: 12px 24px;
+    font-size: 11px;
+  }
+
+  .testimonials-wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .service, .card {
+    padding: 2rem;
+  }
+}
+
+/* Ajuste específico hero */
+@media (max-height: 700px) {
+  .hero {
+    height: 80vh;
+  }
+}
+/* =========================
+   HERO FULL HEIGHT AJUSTADO
+========================= */
+
+/* Siempre ocupa 100vh, incluso en portátiles y pantallas grandes */
+.hero {
+  height: 100vh; /* altura completa de la ventana */
+  min-height: 600px; /* evita que sea demasiado pequeño en pantallas muy bajas */
+}
+
+/* Ajuste contenido hero centrado */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+/* Texto escalable en pantallas grandes */
+@media (min-width: 1600px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
